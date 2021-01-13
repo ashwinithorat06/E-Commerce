@@ -1,0 +1,29 @@
+.container-fluid{
+    width: 100%;
+}
+.newsletter{
+   
+    height: 30vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/newsletter2.jpg);
+ background-repeat: no-repeat;
+    background-size: cover;
+}
+.subscribe text h2{
+color: wheat !important;}
+.about{
+    padding: 5%;
+    /* border: 4px solid rgb(103, 226, 103); */
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/footer-frame1.jpg);
+    background-repeat: no-repeat;
+       background-size: cover; */
+}
+.about-content p{
+font-size: small;
+}
+ul li{
+list-style-type: none;
+}
+
+ul li span{
+    color: gray;
+}

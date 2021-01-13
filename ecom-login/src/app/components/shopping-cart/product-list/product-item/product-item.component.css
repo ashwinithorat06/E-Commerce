@@ -1,0 +1,9 @@
+img{
+    height: 20vh;
+    width: 100%;
+}
+
+i{
+    cursor: pointer;
+    color: rgb(184, 15, 15);
+}

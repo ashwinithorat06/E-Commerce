@@ -1,0 +1,10 @@
+    
+    <div *ngIf='notEmpty || cartItem.qty>0' class="cart-item">
+    
+        <span>{{ cartItem.productName}}</span>
+        *<span>{{ cartItem.qty}}</span> =
+        <strong>{{ (cartItem.price* cartItem.qty) | currency :'INR'}}</strong>
+        <span class="ml-3" ><i class="fas fa-times" (click)=remove() ></i></span>
+       
+    </div>
+

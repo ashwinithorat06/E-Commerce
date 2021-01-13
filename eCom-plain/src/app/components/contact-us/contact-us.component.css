@@ -1,0 +1,50 @@
+.containerA{
+    margin-top: 15vh;
+}
+.containerA .about-bg{
+    text-align: center;
+    height: 60vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/image_6.jpg);
+ background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerA .about-bg .text{
+    font-weight: bolder;
+font-size: 2rem;
+}
+.containerB .contact-details>*{
+    text-align: center;
+    margin: 2%;
+    height: 20vh;
+    background-color: rgb(232, 235, 232);
+    color:rgb(59, 56, 56);
+}
+.containerB .row .icon{
+    padding: 5%;
+     border-radius: 50%;
+ }
+ .containerB .row .iconA{
+     /* background-image:url( "src/assets/forest.jpg") ; */
+     
+     background-color: rgb(168, 223, 236);
+ 
+ }
+ .containerB .row .iconB{
+     background-color: rgb(240, 200, 174);
+ 
+ }
+ .containerB .row .iconC{
+     background-color: rgb(238, 177, 215);
+ 
+ }
+ .containerB .row .iconD{
+     background-color: rgb(128, 230, 128);
+ 
+ }
+.containerB i{
+    color:rgb(59, 56, 56);
+    padding: 2%;
+}
+.containerC iframe{
+    width: 100%;
+}

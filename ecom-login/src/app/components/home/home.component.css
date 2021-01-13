@@ -1,0 +1,187 @@
+/* home */
+.containerA img{
+    width: 100%;
+    height: 90vh;
+}
+.containerA .carousel-caption {
+    font-family: cursive;
+    position: absolute;
+    z-index: 20;
+}
+.containerA  img{
+    cursor: pointer;
+}
+.containerA .carousel-caption p,h1{
+    margin: 2%;
+    font-size: 6rem;
+    color: white;
+}
+.containerA .captionA{
+    top: 40%;
+    right:60%;
+}
+.containerA .captionB{
+    top: 10%;
+    left: 15%;
+}
+.containerA .captionC{
+    top: 5%;
+    left: 15%;
+}
+.containerA .captionD{
+    top: 75%;
+    left:75%;
+}
+.containerB .fa-truck,.fa-leaf ,.fa-award,.fa-phone-alt{
+    padding: 2%;
+    color: white;
+}
+
+.containerB .icon{
+   padding-top: 12%;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+.containerB .iconA{
+    background-color: rgb(168, 223, 236);
+
+}
+.containerB .iconB{
+    background-color: rgb(240, 200, 174);
+
+}
+.containerB .iconC{
+    background-color: rgb(238, 177, 215);
+
+}
+.containerB .iconD{
+    background-color: rgb(143, 218, 168);
+
+}
+.containerB .icon-body *{
+    font-size:large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.containerB{
+    margin-top: 10vh;
+}
+
+/* Quality products */
+.containerC{
+    margin-top: 15vh;
+    height: 100vh;
+}
+.containerC .row1{
+    height:100%;
+}
+.containerC .row2, .containerC .row3,.containerC .row4,.containerC .row5{
+    height:50%;
+    padding: 4%;
+}
+.containerC .fruit span,.veggie span,.juice span,.nuts span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    /* padding: 1%; */
+    color:rgb(238, 247, 238);
+    background-color: rgb(97, 196, 88);
+}
+
+.containerC .fruit{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/fruit3.jpg);
+ background-repeat: no-repeat;
+    background-size: cover
+}
+.containerC .veggie{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/AB1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.containerC .appname{
+    width: 100%;
+    height: 98%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.containerC .juice{
+    cursor: pointer;
+       background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/juice4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.containerC .nuts{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/nuts2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+/* testimonial */
+.containerD .testimony{
+    height: 60vh;
+    margin-left: 45%;
+}
+.containerD img{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    justify-content: center;
+    width: 20%;
+}
+.containerD .carousel-caption{
+    color: gray;
+}
+.containerD .text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.containerD h3{
+    font-weight: bold;
+    color: rgb(77, 72, 72);
+}
+.containerD h6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* deal of the day */
+ .containerE{
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/deal1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerE .dealCarousel a{
+    color:white;
+}
+.containerE p,.containerE h5{
+    color: gray;
+}
+.containerE h1,.containerE h2{
+    font-size: 3rem;
+}
+.containerE img{
+    width: 100%;
+    height: 100vh;
+}
+.containerE .carousel-title{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: 20;
+    color:  rgb(103, 226, 103);
+    /* text-shadow: 0 1px 2px rgba(0,0,0,.6); */
+  }
+  .containerE h6{
+      padding-top: 2vh;
+      color: black;
+  }

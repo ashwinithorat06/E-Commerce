@@ -1,0 +1,70 @@
+/* .containerA */
+.containerA{
+    margin-top: 15vh;
+   height: 100vh;
+}
+.containerA .spices{
+    margin-top: 5%;
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/spices1.jpeg);
+ background-repeat: no-repeat;
+    background-size: cover
+}
+.containerA ngb-carousel img{
+    width: 100%;
+    height:75vh;
+}
+.containerA h6,p{
+    font-size:1rem ;
+}
+.containerA h1{
+    font-size:2rem ;
+}
+.containerA .carousel-caption {
+  
+    position: absolute;
+    z-index: 20;
+}
+.containerA .captionA{
+    top: 1%;
+    left: 10%;
+color: rgb(11, 165, 11);
+}
+.containerA .captionB{
+   
+    color: white;
+}
+.containerA .captionC{
+    top: 1%;
+    left: 20%;
+    color: white;
+}
+.containerA .captionD{
+    top: 1%;
+    left: 5%;
+    color: rgb(66, 3, 8);
+}
+.containerA .categories>button{
+    font-size: 1rem;
+    width: 25vw;
+}
+.containerA .categorylist>button{
+    font-size: 1rem;
+    width: 25vw;
+}
+/* containerB */
+.containerB{
+    margin: 2%;
+    text-align: center;
+    height: auto;
+}
+.containerB .product-grid img{
+
+    height: 26vh;
+    width: 18vw;
+} 
+
+.containerB .product-grid .prod1{
+    border: 1px solid rgb(233, 227, 227);
+}

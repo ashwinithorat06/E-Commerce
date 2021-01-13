@@ -1,0 +1,27 @@
+.containerA{
+    margin-top: 15vh;
+}
+.containerA .about-bg{
+    text-align: center;
+    height: 60vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(src/assets/bg_1.jpg);
+ background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerA .about-bg .text{
+    font-weight: bolder;
+font-size: 2rem;
+}
+.containerB .blog-img img{
+width: 100%;
+}
+.containerB .blog-text a{
+    color: gray;
+}
+.containerB .blog-heading h1{
+color: rgb(37, 161, 37);
+}
+.containerB .blog-heading p{
+    font-size: 1rem;
+    justify-content: justify;
+}

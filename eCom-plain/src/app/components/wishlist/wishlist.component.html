@@ -1,0 +1,9 @@
+<div class="row">
+        <div *ngFor="let data of cartData | async" class="col cart mx-auto">
+                <img style="height: 20vh;width:60%" [src]="data.imageUrl" alt="img">
+                <p>{{data.productName}}</p>
+                <p>{{data.price}}</p>
+                <p>{{data.id}}</p>
+                <p>{{data.description}}</p>
+        </div>
+</div>

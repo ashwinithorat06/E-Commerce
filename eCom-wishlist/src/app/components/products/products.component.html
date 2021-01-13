@@ -1,0 +1,642 @@
+<!-- containerA -->
+<div class="container containerA ">
+<div class="row">
+<div class="col-lg-4 col-md-3">
+      <div class="category">
+          <h1 style="color: rgb(128, 128, 128);text-align:center">Coming Soon</h1>
+          <h4 style="color: gray;text-align:center">Spices</h4>
+          <div class="row spices">
+               
+          </div>
+          <div class="row mt-3 ml-1">
+        <div ngbDropdown class="d-inline-block categories"  [autoClose]="false">
+          <button class="btn btn-success" id="dropdownBasic1" ngbDropdownToggle>Category</button>
+          <div class="categorylist" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button  type="button"  ngbDropdownItem (click)="All()">All products</button>
+            <button  type="button"  ngbDropdownItem (click)="Veg()">Vegetables</button>
+            <button  type="button"  ngbDropdownItem (click)="Fruit()">Fruits</button>
+            <button  type="button"  ngbDropdownItem (click)="Juice()">Fresh Juices</button>
+            <button  type="button"  ngbDropdownItem (click)="Nut()">Dry Fruits</button>
+            </div>
+        </div>
+    </div>
+
+      </div>
+</div>
+<div class="col-lg-8 col-md-9">
+    <div class="searching my-3" >
+        <label for="search" class="mr-5 pr-3">All Categories</label> 
+        <input class="ml-3 mr-2" style="width: 30vw;" type="search" name="serch" id="search" placeholder="search"> <a href="#" class="btn btn-success">Shop now</a>
+    </div>
+    <ngb-carousel interval="3000"  [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+   
+        <ng-template ngbSlide >
+          <div class="picsum-img-wrapper">
+            <img src='assets\AB1.jpg' alt="one">
+          </div>
+          <div class="carousel-caption captionA">
+            <h6>Fresh Vegetables</h6>
+           <h1>100% Organic</h1>
+           <p>Free Pickup and Delivary available</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide >
+            <div class="picsum-img-wrapper">
+              <img src='assets\nuts3.jpg' alt="two">
+            </div>
+            <div class="carousel-caption captionB">
+              <h6>Variety Nuts</h6>
+              <h1>100% Organic </h1>
+           <p>Free Pickup and Delivary available</p>
+
+            </div>
+          </ng-template>
+          <ng-template ngbSlide >
+            <div class="picsum-img-wrapper">
+              <img src='assets\AB12.jpg' alt="three">
+            </div>
+           
+            <div class="carousel-caption captionC">
+              <h6>Farm Fresh Fruits</h6>
+              <h1>100% Organic </h1>
+              <p>Free Pickup and Delivary available</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide >
+            <div class="picsum-img-wrapper">
+              <img src='assets\juices2.jpg' alt="four">
+            </div>
+            <div class="carousel-caption captionD">
+              <h6>Juice Delight</h6>
+              <h1>100% Organic </h1>
+              <p>Free Pickup and Delivary available</p>
+            </div>
+          </ng-template>
+      </ngb-carousel>
+      
+</div>
+</div>
+</div>
+
+<!-- containerB -->
+
+<div class="container containerB mx-auto">
+  <div class="title">
+      <h1>Products</h1>
+  </div>
+  <div class="categories mx-auto">
+     
+    </div>
+    <button class="btn btn-outline-success" (click)="All()"> All</button>
+    <button class="btn btn-outline-success ml-3" (click)="Veg()">Vegetables</button>
+    <button class="btn btn-outline-success ml-3" (click)="Fruit()">Fruits</button>
+    <button class="btn btn-outline-success ml-3" (click)="Juice()">Juices</button>
+    <button class="btn btn-outline-success ml-3" (click)="Nut()">Nuts</button>
+
+    <div *ngIf="all" class="product-grid display-all mt-5">
+      <div class=" grid1 mt-3">
+        <mat-grid-list cols="4" >
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-5a.jpg" alt="cherrytomato">
+              <h1>Cherry Tomato</h1>
+              <h3>$10</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-7a.jpg" alt="carrot">
+              <h1>Carrot</h1>
+              <h3>$60</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-22.jpg" alt="pomogranate">
+              <h1>Pomogranate</h1>
+              <h3>$120</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\honeydew.jpg" alt="honeydew juice">
+              <h1>Honeydew Juice</h1>
+              <h3>$8</h3>
+
+            </div>
+          </mat-grid-tile>
+         
+        </mat-grid-list>
+      </div>
+      <div class=" grid2 mt-3"> 
+        <mat-grid-list cols="4" rowHeight="1:1">
+         
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-10a.jpg" alt="apple">
+              <h1>Apple</h1>
+              <h3>$150</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\Almonds.jpg" alt="almonds">
+              <h1>Almonds</h1>
+              <h3>$250</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\chilli.jpg" alt="chilli">
+                <h1>Red Chilli</h1>
+                <h3>$20</h3>
+
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile class="mt-3 ">
+            <div class="prod1">
+              <img src="assets\product-6.jpg" alt="brinjal">
+              <h1>Brinjal</h1>
+              <h3>$40</h3>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class=" grid3 mt-3"> 
+        <mat-grid-list cols="4" rowHeight="1:1">
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\walnut1.jpg" alt="walnut">
+              <h1>Walnut</h1>
+              <h3>$320</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-16.jpg" alt="capsicum">
+              <h1>Capsicum</h1>
+              <h3>$20</h3>
+
+            </div>
+          </mat-grid-tile>
+         
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\watermelon_juice.jpg" alt="watermelon juice">
+              <h1>Watermelon Juice</h1>
+              <h3>$6</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3 ">
+            <div class="prod1">
+              <img src="assets\product-10.jpg" alt="lettuce">
+              <h1>Lettuce</h1>
+              <h3>$10</h3>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+    
+    <div *ngIf="veg" class="product-grid display-veg mt-5">
+      <div class=" grid1 mt-3">
+        <mat-grid-list cols="4" >
+            
+          <mat-grid-tile class="mt-3 ">
+              <div class="prod1">
+                <img src="assets\product-10.jpg" alt="lettuce">
+                <h1>Lettuce</h1>
+                <h3>$10</h3>
+              </div>
+            </mat-grid-tile>
+       
+         
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-11.jpg" alt="ginger">
+              <h1>Ginger</h1>
+              <h3>$10</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-16.jpg" alt="capsicum">
+              <h1>Capsicum</h1>
+              <h3>$20</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\product-7a.jpg" alt="carrot">
+                <h1>Carrot</h1>
+                <h3>$60</h3>
+
+              </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class=" grid2 mt-3"> 
+        <mat-grid-list cols="4" rowHeight="1:1">
+        
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-3.jpg" alt="mushroom">
+              <h1>Mushtroom</h1>
+              <h3>$50</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-6a.jpg" alt="brocolli">
+              <h1>Brocolli</h1>
+              <h3>$250</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3 ">
+            <div class="prod1">
+              <img src="assets\product-6.jpg" alt="brinjal">
+              <h1>Brinjal</h1>
+              <h3>$40</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\chilli.jpg" alt="chilli">
+                <h1>Red Chilli</h1>
+                <h3>$20</h3>
+
+              </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class=" grid3 mt-3"> 
+        <mat-grid-list cols="4" rowHeight="1:1">
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\product-5.jpg" alt="cabbage">
+                <h1>Cabbage</h1>
+                <h3>$50</h3>
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-7.jpg" alt="Banana flower">
+              <h1>Banana Flower</h1>
+              <h3>$6</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\product-14.jpg" alt="baby corn">
+              <h1>Baby Corn</h1>
+              <h3>$15</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\product-5a.jpg" alt="cherrytomato">
+                <h1>Cherry Tomato</h1>
+                <h3>$10</h3>
+              </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+    
+    <div *ngIf="fruit" class="product-grid display-fruit mt-5">
+      <div class=" grid1 mt-3"> 
+          <mat-grid-list cols="4" rowHeight="1:1">
+            <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\kiwi.jpg" alt="kiwi">
+                <h1>Kiwi</h1>
+                <h3>$50</h3>
+
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\papaya.jpg" alt="papaya">
+                <h1>Papaya</h1>
+                <h3>$10</h3>
+
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\product-13.jpg" alt="raspberries">
+                <h1>Raspberries</h1>
+                <h3>$100</h3>
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile class="mt-3 ">
+              <div class="prod1">
+                <img src="assets\grapes.jpg" alt="grapes">
+                <h1>Grapes</h1>
+                <h3>$15</h3>
+              </div>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+      
+      <div class=" grid2 mt-3"> 
+        <mat-grid-list cols="4" rowHeight="1:1">
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\straw.jpg" alt="strawberry">
+                <h1>Strawberry</h1>
+                <h3>$40</h3>
+
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\product-22.jpg" alt="pomogranate">
+                <h1>Pomogranate</h1>
+                <h3>$120</h3>
+
+              </div>
+            </mat-grid-tile>
+         
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\banana.jpeg" alt="banana">
+              <h1>Banana</h1>
+              <h3>$10</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3 ">
+            <div class="prod1">
+              <img src="assets\melon.jpg" alt="watermelon">
+              <h1>Watermelon</h1>
+              <h3>$25</h3>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class=" grid3 mt-3">
+          <mat-grid-list cols="4" >
+              <mat-grid-tile class="mt-3">
+                  <div class="prod1">
+                    <img src="assets\guava.jpg" alt="guava">
+                    <h1>Guava</h1>
+                    <h3>$65</h3>
+                  </div>
+                </mat-grid-tile>
+           
+            <mat-grid-tile class="mt-3">
+                <div class="prod1">
+                  <img src="assets\mango.jpg" alt="mango">
+                  <h1>Mango</h1>
+                  <h3>$40</h3>
+  
+                </div>
+              </mat-grid-tile>
+            
+            <mat-grid-tile class="mt-3">
+                <div class="prod1">
+                  <img src="assets\product-10a.jpg" alt="apple">
+                  <h1>Apple</h1>
+                  <h3>$150</h3>
+  
+                </div>
+              </mat-grid-tile>
+            <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\orange.jpg" alt="orange">
+                <h1>Orange</h1>
+                <h3>$35</h3>
+
+              </div>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+    </div>
+    
+    <div *ngIf="juice" class="product-grid display-juice mt-5">
+      <div class=" grid1 mt-3">
+        <mat-grid-list cols="4" >
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\watermelon_juice.jpg" alt="watermelon juice">
+              <h1>Watermelon Juice</h1>
+              <h3>$6</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\carrot_juice.jpg" alt="carrot juice">
+                <h1>Carrot Juice</h1>
+                <h3>$8</h3>
+
+              </div>
+            </mat-grid-tile>
+        
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\karela_juice.png" alt="bitterguard juice">
+                <h1>Bitterguard Juice</h1>
+                <h3>$8</h3>
+
+              </div>
+            </mat-grid-tile>
+          
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\honeydew.jpg" alt="honeydew juice">
+              <h1>Honeydew Juice</h1>
+              <h3>$8</h3>
+
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class=" grid2 mt-3"> 
+        <mat-grid-list cols="4" rowHeight="1:1">
+       
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\mango_juice.jpg" alt="mango juice">
+                <h1>Mango Juice</h1>
+                <h3>$9</h3>
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\dragon_juice.jpg" alt="dragon fruit juice">
+              <h1>Dragon Fruit Juice</h1>
+              <h3>$7</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\tomato_juice.jpg" alt="tomato juice">
+                <h1>Tomato Juice</h1>
+                <h3>$4</h3>
+
+              </div>
+            </mat-grid-tile>
+         
+          <mat-grid-tile class="mt-3 ">
+            <div class="prod1">
+              <img src="assets\kiwi_juice.jpg" alt="kiwi juice">
+              <h1>Kiwi Juice</h1>
+              <h3>$9</h3>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class=" grid3 mt-3"> 
+        <mat-grid-list cols="4" rowHeight="1:1">
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\coco_juice.jpg" alt="coconut water">
+                <h1>Coconut Water</h1>
+                <h3>$6</h3>
+
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\orange_juice.jpg" alt="orange juice">
+                <h1>Orange Juice</h1>
+                <h3>$5</h3>
+
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\lemon_juice.jpg" alt="lemon juice">
+              <h1>Lemon Juice</h1>
+              <h3>$2</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3 ">
+            <div class="prod1">
+              <img src="assets\pomo_juice.jpg" alt="pomogranate juice">
+              <h1>Pomogranate Juice</h1>
+              <h3>$10</h3>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+    
+    <div *ngIf="nut" class="product-grid display-nut mt-5">
+      <div class=" grid1 mt-3">
+        <mat-grid-list cols="4" >
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\Almonds.jpg" alt="almonds">
+              <h1>Almonds</h1>
+              <h3>$300</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\cashews.jpg" alt="cashew">
+              <h1>Cashew</h1>
+              <h3>$260</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\pista3.jpg" alt="pista">
+              <h1>Pista</h1>
+              <h3>$320</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\walnut1.jpg" alt="walnut">
+              <h1>Walnut</h1>
+              <h3>$400</h3>
+
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class=" grid2 mt-3"> 
+        <mat-grid-list cols="4" rowHeight="1:1">
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\dry_grapes.jpg" alt="dry grapes">
+              <h1>Dry Grapes</h1>
+              <h3>$290</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\hazelnut.jpg" alt="hazelnut">
+              <h1>hazelnut</h1>
+              <h3>$450</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\macadamia.jpg" alt="macadamia">
+                <h1>Macadamia</h1>
+                <h3>$220</h3>
+
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile class="mt-3 ">
+            <div class="prod1">
+              <img src="assets\pecan.jpg" alt="pecan">
+              <h1>pecan</h1>
+              <h3>$140</h3>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class=" grid3 mt-3">
+           
+        <mat-grid-list cols="4" rowHeight="1:1">
+        
+          <mat-grid-tile class="mt-3">
+              <div class="prod1">
+                <img src="assets\brazil_nuts.jpg" alt="brazil nuts">
+                <h1>Brazil Nuts</h1>
+                <h3>$260</h3>
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\pinenuts.jpg" alt="pinenuts">
+              <h1>Pine Nuts</h1>
+              <h3>$160</h3>
+
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3">
+            <div class="prod1">
+              <img src="assets\dry_grapes_B.jpg" alt="dry grapes black">
+              <h1>Dry Grapes(Black)</h1>
+              <h3>$50</h3>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile class="mt-3 ">
+            <div class="prod1">
+              <img src="assets\peanut.jpg" alt="peanut">
+              <h1>Peanuts</h1>
+              <h3>$100</h3>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+</div>
